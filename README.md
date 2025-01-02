@@ -18,12 +18,12 @@ The landing page of the site provides a table of contents of the available sketc
 
 |          Key          | Action                                                                        |
 | :-------------------: | ----------------------------------------------------------------------------- |
-|        `space`        | Regenerate sketch with new image and palette seeds.                           |
+|        `space`        | Regenerate sketch with new image and color seeds.                           |
 |          `s`          | Save image to file.                                                           |
-|          `p`          | Regenerate sketch with new palette seed, image random seed remains unchanged. |
-|          `i`          | Regenerate sketch with new image seed, palette random seed remains unchanged. |
+|          `c`          | Regenerate sketch with new color seed, image random seed remains unchanged. |
+|          `i`          | Regenerate sketch with new image seed, color random seed remains unchanged. |
 | Left and Right arrows | Preview/Next image seeds.                                                     |
-|  Up and Down arrows   | Preview/Next palette seeds.                                                   |
+|  Up and Down arrows   | Preview/Next color seeds.                                                   |
 
 ## Prompts
 
