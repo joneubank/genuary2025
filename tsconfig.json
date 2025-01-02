@@ -1,0 +1,33 @@
+{
+	"include": ["src", "vite.config.ts"],
+	"compilerOptions": {
+		"jsx": "react-jsx",
+
+		/* Basic Options */
+		"target": "ESNext",
+		"module": "ESNext" /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */,
+		"lib": [
+			"ESNext",
+			"DOM",
+			"DOM.Iterable"
+		] /* Specify library files to be included in the compilation. */,
+		"noEmit": true /* Do not emit outputs. */,
+		"isolatedModules": true /* Transpile each file as a separate module (similar to 'ts.transpileModule'). */,
+
+		/* Strict Type-Checking Options */
+		"strict": true /* Enable all strict type-checking options. */,
+		"noImplicitReturns": true /* Report error when not all code paths in function return a value. */,
+		"noFallthroughCasesInSwitch": true /* Report errors for fallthrough cases in switch statement. */,
+
+		/* Module Resolution Options */
+		"moduleResolution": "Bundler" /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */,
+		// "baseUrl": "./src" /* Base directory to resolve non-absolute module names. */,
+		"esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */,
+
+		/* Advanced Options */
+		"skipLibCheck": true /* Skip type checking of declaration files. */,
+		"forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */,
+		"resolveJsonModule": true,
+		"types": ["react/next", "react-dom/next"]
+	}
+}
