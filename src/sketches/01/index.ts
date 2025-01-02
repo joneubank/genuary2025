@@ -19,25 +19,38 @@ const { array, repeat, range, clamp, ratioArray } = Utils;
 const config = SketchConfig({
 	menuDelay: 0,
 	paletteType: PaletteType.Curated,
+	width: 1000,
+	height: 1800,
 });
 
 const controls = {
 	rings: ControlPanel('Layout', {
-		size: Parameters.range({ label: 'Ring Size', max: 2 }),
-		ringCount: Parameters.number({ label: 'Ring Count', initialValue: 4, min: 0, max: 50, step: 1 }),
+		size: Parameters.range({ label: 'Ring Size', max: 2, initialEnd: 0.85 }),
+		ringCount: Parameters.number({ label: 'Ring Count', initialValue: 25, min: 0, max: 50, step: 1 }),
 	}),
 	lines: ControlPanel('Lines', {
-		thickness: Parameters.number({ label: 'Line Thickness' }),
-		height: Parameters.number({ label: 'Line Height' }),
-		density: Parameters.number({ label: 'Line Density' }),
-		fixedDirection: Parameters.boolean({ label: 'Fixed Direction' }),
+		thickness: Parameters.number({ label: 'Line Thickness', initialValue: 0.1 }),
+		height: Parameters.number({ label: 'Line Height', initialValue: 0.75 }),
+		density: Parameters.number({ label: 'Line Density', initialValue: 0.75 }),
+		fixedDirection: Parameters.boolean({ label: 'Fixed Direction', initialValue: false }),
 	}),
 	noise: ControlPanel('Noise Config', {
-		amplitude: Parameters.number({ label: 'Amplitude' }),
-		frequency: Parameters.number({ label: 'Frequency' }),
+		amplitude: Parameters.number({ label: 'Amplitude', initialValue: 1 }),
+		frequency: Parameters.number({ label: 'Frequency', initialValue: 0.2 }),
 		octaves: Parameters.multiSelect({
 			label: 'Octaves',
 			options: ['0', '1', '2', '3', '4', '5', '6', '7', '8'],
+			initialValue: {
+				'0': false,
+				'1': true,
+				'2': true,
+				'3': true,
+				'4': true,
+				'5': true,
+				'6': true,
+				'7': true,
+				'8': false,
+			},
 		}),
 	}),
 } satisfies ControlPanelElements;
