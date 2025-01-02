@@ -34,10 +34,10 @@ function DailySketchRouter(props: {}) {
 	}
 	return (
 		<>
+			<App sketch={sketch} />
 			<Helmet>
 				<title>Genuary 2025 - Day {day}</title>
 			</Helmet>
-			<App sketch={sketch} />
 		</>
 	);
 }
