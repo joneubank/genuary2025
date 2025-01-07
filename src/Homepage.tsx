@@ -13,6 +13,9 @@ function Homepage() {
 				<li>
 					<NavLink to="day/1">Day 01 - Horizontal or Vertical Lines Only</NavLink>
 				</li>
+				<li>
+					<NavLink to="day/2">Day 02 - Layers upon Layers upon Layers</NavLink>
+				</li>
 			</ul>
 		</>
 	);
