@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, useParams, NavLink } from 'react-router';
 import Helmet from 'react-helmet';
 import sketchDay1 from './sketches/01';
+import sketchDay2 from './sketches/02';
 import { App, SketchDefinition } from '@code-not-art/sketch';
 
 function getSketchForDay(
@@ -12,6 +13,9 @@ function getSketchForDay(
 	switch (day) {
 		case '1': {
 			return sketchDay1;
+		}
+		case '2': {
+			return sketchDay2;
 		}
 		default:
 			return { error: 'NOT_FOUND', message: `No sketch is available for day "${day}".` };
